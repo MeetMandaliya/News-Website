@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-color: #f3f3f3;
+  margin: 0;
+}
+.color {
+  background-color: rgb(164, 184, 193);
+}
+.heading-container {
+  background-color: #cb202d;
+  color: #ffffff;
+  font-size: 2.5em;
+  padding: 0.3em 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 50px 0 rgba(2, 0, 31, 0.3);
+  z-index: 1;
+}
+.heading-container h4 {
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+.navbar-options {
+  margin: 0;
+  padding: 0px;
+}
+.option {
+  border-radius: 40px;
+  margin: 5px;
+  padding: 0.5em 1em;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+}
+.cards {
+  text-align: center;
+}
+.cards .container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.cards a {
+  text-decoration: none;
+  outline: none;
+}
+.cards .card-design {
+  border-radius: 5px;
+}
+.cards .card-design .image-box {
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.cards .card-design .image-box img {
+  transition: all 0.9s ease;
+  width: 100%;
+  height: 200px;
+}
+.cards .card-design:hover .image-box img {
+  opacity: 0.7;
+  transform: scale(1.15);
+}
+.cards .card-design .text-box {
+  text-align: center;
+}
+.cards .card-design .text-box .text-container {
+  padding: 30px 18px;
+}
+
+.cards .card-design {
+  background: #ffffff;
+  margin-top: 50px;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+.cards .card-design:hover {
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+.cards .card-design .text-box p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+.cards .card-design .text-box h6 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Roboto Black", sans-serif;
+  letter-spacing: 1px;
+  color: #00acc1;
+}
+.active {
+  background-color: #342e2f;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1050px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
